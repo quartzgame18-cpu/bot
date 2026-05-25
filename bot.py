@@ -1,14 +1,17 @@
+import os
 import telebot
 from telebot import types
 
-BOT_TOKEN = ""
+TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_ID = 7795937922
+
+if not TOKEN:
+    raise ValueError("BOT_TOKEN не найден в переменных окружения")
 
 bot = telebot.TeleBot(TOKEN)
 
 user_data = {}
 admin_reply_target = {}
-
 
 # ======================
 # START
