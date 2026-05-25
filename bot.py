@@ -116,8 +116,8 @@ def b_finish(message):
 def jobs(message):
     markup = types.InlineKeyboardMarkup()
 
-    markup.add(types.InlineKeyboardButton("Медиа", url="https://docs.google.com/"))
-    markup.add(types.InlineKeyboardButton("Стажер", url="https://docs.google.com/"))
+    markup.add(types.InlineKeyboardButton("Медиа", url="https://docs.google.com/forms/d/1ZUh1SNLY0n4PeevHKWy6SeoTBDP-nTJwTV2f4VjcwOk/viewform"))
+    markup.add(types.InlineKeyboardButton("Стажер", url="https://docs.google.com/forms/d/1sqtfB4KQL9yE_PXBtPdKTpoIc7VQqrYHk4NbmkfzNFQ/viewform"))
 
     bot.send_message(
         message.chat.id,
