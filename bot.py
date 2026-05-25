@@ -9,6 +9,7 @@ if not TOKEN:
     raise ValueError("BOT_TOKEN не найден")
 
 bot = telebot.TeleBot(TOKEN)
+bot.delete_webhook()
 
 user_data = {}
 admin_reply_target = {}
